@@ -1,0 +1,138 @@
+.Policy {
+  text-align: left;
+  overflow: auto;
+  background: $color-body;
+  font-family: Muller;
+  color: #000;
+  .Common-Number {
+    top: 5px;
+    left: 15px;
+    @include media-breakpoint-down(sm) {
+      top: 15px;
+      left: 25px;
+    }
+  }
+}
+.Policy-content {
+  @extend .container;
+  position: relative;
+  padding-top: 40px;
+  @include media-breakpoint-down(md) {
+    padding-top: 50px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 60px 25px 0px 25px;
+  }
+}
+.Policy-title {
+  @extend .col-lg-5;
+  @extend .col-sm-12;
+  position: relative;
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  padding: 0 58px 0 15px;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    bottom: auto;
+    left: auto;
+    right: 0px;
+    height: 80%;
+    border: none;
+    border-right: solid 2px $color-green-btn;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 0 15px 40px 15px;
+    &:after {
+      top: auto;
+      bottom: 20px;
+      left: 15px;
+      right: auto;
+      width: 30%;
+      border: none;
+      border-bottom: solid 2px $color-green-btn;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 2rem;
+    text-align: center;
+    &:after {
+      display: none;
+    }
+  }
+}
+.Policy-subtitle {
+  @extend .col-lg-7;
+  @extend .col-sm-12;
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.2;
+  padding: 15px 0 0 75px;
+  @include media-breakpoint-down(md) {
+    padding: 0 0 0 15px;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
+
+.Policy-items {
+  @extend .row;
+  @extend .no-gutters;
+  @extend .justify-content-md-between;
+  margin-top: 90px;
+  @include media-breakpoint-down(lg) {
+    padding: 0 15px;
+  }
+  @include media-breakpoint-down(sm) {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
+.Policy-item {
+  @extend .col-lg-3;
+  @extend .col-md-6;
+  @extend .col-sm-12;
+  padding: 0;
+  //min-height: 200px;
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-bottom: 60px;
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 30px;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.Policy-itemNumber {
+  font-size: 5rem;
+  font-weight: 100;
+  color: $color-green-text;
+  @include media-breakpoint-down(sm) {
+    line-height: 1.2;
+  }
+}
+.Policy-itemTitle {
+  font-size: 1.3em;
+  line-height: 1.2;
+  font-weight: 500;
+}
+.Policy-itemSubtitle {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  @include media-breakpoint-down(sm) {
+    margin-top: 1px;
+  }
+}
+.Policy-spacer {
+  @extend .w-100;
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+
+}

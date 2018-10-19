@@ -1,0 +1,189 @@
+.Form {
+  min-height: 1160px;
+  text-align: left;
+  overflow: auto;
+  background: url('../img/Form-bgr.jpg') center top no-repeat;
+  font-family: Muller;
+  .Common-Number {
+    top: 98px;
+    left: 15px;
+    @include media-breakpoint-down(md) {
+      top: 25px;
+    }
+  }
+}
+.Form-content {
+  @extend .container;
+  position: relative;
+  padding-top: 130px;
+  @include media-breakpoint-down(md) {
+    padding-top: 60px;
+  }
+}
+.Form-title {
+  @extend .col-lg-7;
+  @extend .col-sm-12;
+  position: relative;
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #000;
+  padding: 0 84px 0 15px;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    bottom: auto;
+    left: auto;
+    right: 34px;
+    height: 80%;
+    border: none;
+    border-right: solid 2px $color-green-btn;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 0 15px 40px 15px;
+    font-size: 3rem;
+    text-align: left;
+    &:after {
+      top: auto;
+      bottom: 20px;
+      left: 15px;
+      right: auto;
+      width: 30%;
+      border: none;
+      border-bottom: solid 2px $color-green-btn;
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 0 15px 40px 15px;
+      font-size: 2.2rem;
+    }
+    @include media-breakpoint-down(xs) {
+      padding: 0 15px 20px 15px;
+      font-size: 2.2rem;
+      text-align: center;
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+.Form-subtitle {
+  @extend .col-lg-5;
+  @extend .col-sm-12;
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: 1.2;
+  padding: 15px 0 0 15px;
+  @include media-breakpoint-down(xs) {
+    padding: 0 0 0 15px;
+    text-align: center;
+  }
+}
+
+.Form-form {
+  background-color: $color-white;
+  border: solid 1px transparent;
+  border-radius: 45px;
+  box-shadow: 0 0 150px -20px rgba(0, 0, 0, 0.15);
+  min-height: 840px;
+  margin: 80px 20% 0 20%;
+  padding: 75px 75px;
+  @include media-breakpoint-down(md) {
+    margin: 20px 10% 0 10%;
+    padding: 30px 30px;
+  }
+  @include media-breakpoint-down(sm) {
+    margin: 20px 30px 30px 30px;
+    padding: 25px 15px;
+    border-radius: 15px;
+  }
+  @include media-breakpoint-down(xs) {
+    margin: 20px 0 50px 0;
+    padding: 25px 10px;
+    border-radius: 15px;
+  }
+  input, select {
+    min-height: 60px;
+    &:focus {
+      border-color: $color-green-btn;
+    }
+  }
+  input[type=text], input[type=tel] {
+    color: #000;
+    font-style: italic;
+  }
+  .input-group {
+    position: relative;
+    .floating-label {
+      position: absolute;
+      pointer-events: none;
+      left: 20px;
+      top: 18px;
+      color: #929292;
+      transition: $transition-time ease all;
+      z-index: 3;
+    }
+    &.filled {
+      .floating-label {
+        top: 4px;
+        bottom: 10px;
+        left: 12px;
+        font-size: 11px;
+        opacity: 0.8;
+      }
+    }
+
+  }
+  select {
+    width: 100%;
+    min-height: 60px;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border-radius: 6px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #929292;
+    background: url('../img/select-bgr.png') right 15px top 26px no-repeat;
+    option {
+      &:not(:first-child) {
+        color: #000 !important;
+      }
+    }
+  }
+  .gj-datepicker-bootstrap [role="right-icon"] button .gj-icon, .gj-datepicker-bootstrap [role="right-icon"] button .material-icons {
+    top: 18px !important;
+  }
+}
+.Form-submit {
+  height: 80px;
+  background-color: $color-green-btn;
+  border: solid 1px transparent;
+  margin-top: 25px;
+  padding: 20px 6px 20px 6px;
+  border-radius: 40px;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: $color-white;
+  font-size: 1.4rem;
+}
+.Form-checkboxBlock {
+  color: $color-darkgrey;
+  line-height: 1.2;
+}
+.Form-invalidAlert {
+  text-align: center;
+  display: none;
+}
+.input-group > .form-control:not(:last-child), .input-group > .custom-select:not(:last-child) {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}

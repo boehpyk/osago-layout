@@ -1,0 +1,152 @@
+.Insurance {
+  min-height: 788px;
+  text-align: left;
+  overflow: auto;
+  background: #f8f8f8 url('../img/Insurance-bgr.jpg') center top no-repeat;
+  font-family: Muller;
+  color: #000;
+  .Common-Number {
+    top: 147px;
+    left: 15px;
+    @include media-breakpoint-down(sm) {
+      top: 15px;
+      left: 25px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    background: $color-body;
+  }
+}
+.Insurance-content {
+  @extend .container;
+  position: relative;
+  padding: 200px 15px 30px 15px;
+  @include media-breakpoint-down(md) {
+    padding-top: 50px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 60px 25px 50px 25px;
+  }
+}
+.Insurance-title {
+  @extend .col-lg-5;
+  @extend .col-md-8;
+  @extend .col-xs-12;
+  position: relative;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  @include media-breakpoint-down(sm) {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+.Insurance-offer {
+  @extend .col-lg-5;
+  @extend .col-md-10;
+  @extend .col-xs-12;
+
+  margin-top: 50px;
+
+  @include media-breakpoint-down(sm) {
+    margin-top: 20px;
+  }
+
+
+  ul {
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    li {
+      padding: 12px 0 12px 80px;
+      background: url('../img/Insurance-list-bgr.png') left 16px no-repeat;
+      @include media-breakpoint-down(md) {
+        padding: 20px 0 20px 80px;
+      }
+    }
+  }
+}
+.Insurance-form {
+  margin-top: 75px;
+  .form-group {
+    display: inline-block;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 43px;
+      margin-top: -10px;
+      background-position:  0 0;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    &.name {
+      @extend .col-lg-4;
+      @extend .col-md-6;
+      &:after {
+        width: 14px;
+        height: 17px;
+        background-image: url(../img/icon-name.png);
+      }
+    }
+    &.phone {
+      @extend .col-lg-4;
+      @extend .col-md-6;
+      &:after {
+        width: 19px;
+        height: 17px;
+        background-image: url(../img/icon-phone.png);
+      }
+    }
+    &.submit {
+      @extend .col-lg-4;
+      @extend .col-md-12;
+      margin-bottom: 0 !important;
+      //@include media-breakpoint-between(sm, md) {
+      //  text-align: center;
+      //  input {
+      //    width: auto;
+      //    margin: 0 auto;
+      //  }
+      //}
+    }
+    input {
+      width: 100%;
+    }
+  }
+  input[type=text], input[type=tel] {
+    height: 79px;
+    padding: 20px 6px 20px 31px;
+    border-radius: 39px;
+    margin-right: 10px;
+    background-color: #f5f5f5;
+    border: solid 1px #dfdfdf;
+    font-size: 1rem;
+    color: #000;
+    text-align: left;
+    &:focus {
+      border-color: $color-green-btn;
+      background-color: $color-white;
+      outline: none;
+    }
+  }
+  input[type=submit] {
+    background-color: $color-green-btn;
+    border: solid 1px transparent;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: $color-white;
+    height: 79px;
+    margin-right: 10px;
+    padding: 20px 30px 20px 30px;
+    border-radius: 39px;
+    font-size: 0.9rem;
+    outline: none;
+  }
+
+}

@@ -1,0 +1,56 @@
+.modal {
+  font-family: Muller;
+}
+.modal-content {
+  @include media-breakpoint-down(sm) {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+#successModal {
+  .modal-content {
+    background: none;
+    border: none;
+    @include media-breakpoint-down(sm) {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+  .modal-body {
+    background: $color-blue;
+    color: $color-white;
+    border-radius: 25px;
+    .jumbotron {
+      background: none;
+      margin-bottom: 0;
+    }
+  }
+  .Modal-thanks {
+    position: relative;
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    padding-bottom: 25px;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 50px;
+      margin-left: -25px;
+      border-bottom: solid 2px #fff;
+      opacity: 0.5;
+    }
+  }
+  .Modal-text {
+    margin-top: 25px;
+    font-size: 1.3rem;
+  }
+}
+#agreementModal {
+  .modal-content {
+    text-align: left;
+  }
+}

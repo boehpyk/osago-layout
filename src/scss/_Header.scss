@@ -1,0 +1,495 @@
+.Header {
+  //background-size: cover;
+  text-align: left;
+  overflow: auto;
+  @include media-breakpoint-up(xxs) {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/Header-no-logos-bgr.jpg') center center no-repeat;
+    background-size: auto 60%;
+  }
+  @include media-breakpoint-up(xs) {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/Header-no-logos-bgr.jpg') center center no-repeat;
+    background-size: auto auto;
+  }
+  @include media-breakpoint-up(lg) {
+    min-height: 960px;
+    background: url('../img/Header-bgr2.jpg') center top no-repeat;
+  }
+
+}
+.Header-content {
+  @extend .container;
+  font-family: Muller;
+  color: $color-white;
+}
+.Header-navigation {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  padding: 25px 20px 8px 0px;
+  background-color: #19409c;
+  font-family: Muller;
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: $color-white;
+  text-align: center;
+  z-index: 10;
+  @include media-breakpoint-down(xs) {
+    padding: 25px 0px 40px 0px;
+  }
+  @include media-breakpoint-down(lg) {
+    position: absolute;
+    padding: 25px 0px 8px 0px;
+  }
+  @include media-breakpoint-down(xxl) {
+    padding-bottom: 15px;
+  }
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+.Header-shadow {
+  position: fixed;
+  top: 72px;
+  left: 0;
+  z-index: 9;
+  content: "";
+  width: 40%;
+  box-shadow: 0 10px 25px #000, 0 10px 25px #000, 0 10px 25px #000;
+  transform: rotate(-2deg);
+  border: solid 1px transparent;
+  @include media-breakpoint-down(lg) {
+    position: absolute;
+  }
+}
+.Header-logo {
+  font-size: 1.15rem;
+  font-weight: 200;
+  @include media-breakpoint-up(0) {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  @include media-breakpoint-up(xl) {
+    float: left;
+    margin-left: 20px;
+    text-align: left;
+    margin-bottom: 0;
+  }
+  @include media-breakpoint-up(xxl) {
+    float: left;
+    margin-left: 58px;
+    text-align: left;
+    margin-bottom: 0;
+
+  }
+  h3 {
+    text-transform: uppercase;
+    margin: 0;
+    @include media-breakpoint-up(0) {
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+    @include media-breakpoint-up(xxl) {
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+  }
+}
+.Header-address {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  font-weight: 200;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: solid 1px transparent;
+    border-radius: 50%;
+    background-color: $color-white;
+    background-image: url(../img/icon-map-marker.png);
+    background-repeat: no-repeat;
+  }
+  a {
+    display: block;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: $color-white;
+  }
+  @include media-breakpoint-up(xxs) {
+    width: 310px;
+    margin: 5px auto 10px auto;
+    padding: 0 0 0 62px;
+    font-size: 1rem;
+    &:before {
+      width: 48px;
+      height: 48px;
+      background-position: center 13px;
+    }
+  }
+  @include media-breakpoint-up(xs) {
+    display: inline-block;
+    width: auto;
+    margin: 0 0 0 43px;
+    padding: 10px 0 0 56px;
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+  @include media-breakpoint-up(lg) {
+    float:left;
+    width: calc(30% - 23px);
+    margin: 0 0 0 23px;
+    padding: 10px 0 0 56px;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    &:before {
+      width: 48px;
+      height: 48px;
+      background-position: center 13px;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    float: left;
+    width: auto;
+    margin: 0 0 0 68px;
+    padding-left: 57px;
+    font-size: 0.9rem;
+    &:before {
+      width: 48px;
+      height: 48px;
+      background-position: center 13px;
+    }
+  }
+  @include media-breakpoint-up(xxl) {
+    float: left;
+    width: auto;
+    margin: 0 0 0 6%;
+    padding-left: 75px;
+    font-size: 1.1rem;
+    &:before {
+      width: 62px;
+      height: 62px;
+      background-position:  center 20px;
+    }
+  }
+}
+
+.Header-phone {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  font-weight: 200;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: solid 1px transparent;
+    border-radius: 50%;
+    background-color: $color-white;
+    background-image: url(../img/icon-phone.png);
+    background-repeat: no-repeat;
+  }
+  a {
+    display: block;
+    font-weight: 500;
+    color: $color-white;
+  }
+  @include media-breakpoint-up(xxs) {
+    display: inline-block;
+    width: 310px;
+    padding: 0 0 0 62px;
+    margin: 0 auto 15px auto;
+    &:before {
+      width: 48px;
+      height: 48px;
+      background-position: center 13px;
+    }
+  }
+  @include media-breakpoint-up(xs) {
+    display: inline-block;
+    width: auto;
+    margin: 0 auto 0 auto;
+    padding-left: 62px;
+    font-size: 1rem;
+  }
+  @include media-breakpoint-up(lg) {
+    float:left;
+    width: calc(30% - 23px);
+    margin: 0 0 0 23px;
+    padding-left: 62px;
+    font-size: 1rem;
+    &:before {
+      width: 48px;
+      height: 48px;
+      background-position: center 13px;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    float: left;
+    width: auto;
+    margin: 0 0 0 23px;
+    padding-left: 62px;
+    font-size: 1rem;
+    a {
+      font-size: 1.1rem;
+    }
+    &:before {
+      width: 48px;
+      height: 48px;
+      background-position: center 15px;
+    }
+  }
+  @include media-breakpoint-up(xxl) {
+    float: left;
+    width: auto;
+    margin: 0 0 0 6%;
+    padding-left: 76px;
+    font-size: 1.2rem;
+    a {
+      font-size: 1.3rem;
+    }
+    &:before {
+      width: 62px;
+      height: 62px;
+      background-position:  center 22px;
+    }
+  }
+}
+
+.Header-callback {
+  @include media-breakpoint-up(0) {
+    display: block;
+    text-align: center;
+  }
+  @include media-breakpoint-up(xs) {
+    float: none;
+    display: inline-block;
+    width: auto;
+    margin-top: 30px;
+  }
+  @include media-breakpoint-up(lg) {
+    float:left;
+    width: 40%;
+    margin-right: 0;
+    margin-top: 0;
+  }
+  @include media-breakpoint-up(xl) {
+    float: right;
+    width: auto;
+    margin-right: 0;
+  }
+  @include media-breakpoint-up(xxl) {
+    float: right;
+    width: auto;
+    margin-right: 25px;
+  }
+  .form-group {
+    display: inline-block;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 28px;
+      width: 12px;
+      height: 12px;
+      margin-top: -6px;
+      background: url(../img/icon-phone.png) 0 0 no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+  input[type=text] {
+    margin: 0 5px 0 5px;
+    background-color: $color-lightgrey;
+    border: solid 1px transparent;
+    font-size: 0.9rem;
+    color: #000;
+    text-align: left;
+    @include media-breakpoint-up(xxs) {
+      width: 178px;
+      height: 42px;
+      padding: 10px 3px 10px 21px;
+      border-radius: 21px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 178px;
+      height: 42px;
+      padding: 10px 3px 10px 21px;
+      border-radius: 21px;
+    }
+    @include media-breakpoint-up(xxl) {
+      width: 222px;
+      height: 62px;
+      padding: 20px 6px 20px 31px;
+      border-radius: 31px;
+      font-size: 1rem;
+    }
+  }
+  input[type=submit] {
+    background-color: $color-green-btn;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: $color-white;
+    border-color: transparent;
+    @include media-breakpoint-up(xxs) {
+      width: 178px;
+      height: 42px;
+      margin: 0 5px 0 5px;
+      padding: 10px 6px 10px 6px;
+      border-radius: 21px;
+      font-size: .75rem;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 178px;
+      height: 42px;
+      margin-right: 0px;
+      padding: 10px 6px 10px 6px;
+      border-radius: 21px;
+      font-size: .75rem;
+    }
+    @include media-breakpoint-up(xxl) {
+      width: 222px;
+      height: 62px;
+      margin-right: 10px;
+      padding: 20px 6px 20px 6px;
+      border-radius: 31px;
+      font-size: 0.9rem;
+    }
+
+  }
+
+}
+
+.Header-offer {
+  @extend .col-xl-8;
+  @extend .col-lg-10;
+  @extend .col-xs-12;
+
+  margin-top: 250px;
+  @include media-breakpoint-down(lg) {
+    margin-top: 300px;
+  }
+  @include media-breakpoint-down(md) {
+    margin-top: 350px;
+  }
+  @include media-breakpoint-down(xs) {
+    margin-top: 390px;
+    text-align: center;
+  }
+
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 50px;
+    @include media-breakpoint-down(xs) {
+      font-size: 2.4rem;
+      margin-bottom: 20px;
+    }
+  }
+  ul {
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    @include media-breakpoint-down(xs) {
+      width: 80%;
+      margin: 0 auto 20px auto;
+    }
+    @include media-breakpoint-down(xss) {
+      width: 100%;
+      margin: 0 auto 20px auto;
+      font-size: 1.2rem;
+    }
+    li {
+      padding: 8px 0 8px 50px;
+      background: url('../img/list-image.png') left 8px no-repeat;
+      @include media-breakpoint-down(xss) {
+        padding: 8px 0 8px 40px;
+      }
+    }
+  }
+}
+.Header-FormLink {
+  display: block;
+  box-sizing: border-box;
+  width: 295px;
+  height: 80px;
+  margin: 45px 0 0 0;
+  padding: 27px 6px 0px 6px;
+  border-radius: 40px;
+  font-size: 1.4rem;
+  background-color: $color-green-btn;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: $color-white;
+  @include media-breakpoint-down(xs) {
+    margin: 0 auto;
+    width: 255px;
+    height: 60px;
+    padding: 17px 6px 0px 6px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+  }
+}
+.Header-insLogos {
+  @extend .row;
+  width: auto;
+  padding: 32px 15px;
+  margin: 50px 0 0 0;
+  background-color: $color-blue;
+  max-width: 100%;
+  @include media-breakpoint-up(xxs) {
+    justify-content: center !important;
+  }
+  @include media-breakpoint-up(sm) {
+    justify-content: space-around !important;
+    padding: 32px 45px;
+  }
+  div {
+    display: table-cell;
+    width: auto;
+    max-width: 50%;
+    vertical-align: middle;
+    @extend .col-sm-4;
+    @extend .col-xs-6;
+    margin-bottom: 25px;
+    text-align: center;
+    img {
+      @extend .img-fluid;
+    }
+    &:nth-child(5) {
+      padding-top: 7px;
+      margin-bottom: 0;
+    }
+    &:nth-child(6) {
+      padding-top: 7px;
+      margin-bottom: 0;
+    }
+    @include media-breakpoint-down(sm) {
+
+    }
+  }
+  @include media-breakpoint-up(xxs) {
+    @extend .col-xs-6;
+    display: flex;
+  }
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+
+}

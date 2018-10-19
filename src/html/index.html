@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="title" content="Страховки24" />
+    <meta name="description" content="Центр страхования ОСАГО со скидкой до 50% Без комиссий за оформление Без ожиданий и очередей Без доп. страхования" />
+    <meta name="keywords" content="Осаго, страховки, Каско, страхование, страховка" />
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content="Центр страхования ОСАГО со скидкой до 50% Без комиссий за оформление Без ожиданий и очередей Без доп. страхования"/>
+    <meta property="og:image" content="/img/og.image.png" />
+
+
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="stylesheet" href="css/style.bundle.css" />
+
+    <link rel="icon" type="image/png" href="favicon/favicon.png" />
+
+    <title>Страховки24</title>
+</head>
+<body>
+
+<header class="Header">
+    <div class="Header-navigation">
+        <div class="Header-logo">
+            <h3>Cтраховки-<span class="green">24</span></h3>
+            Центр страхования
+        </div>
+        <div class="Header-address">
+            АЛЬМАКС-АВТО, Тольятти,<br />
+            Обводное шоссе, 10б /  с 9 до 19
+        </div>
+        <div class="Header-phone">
+            Наш телефон
+            <a href="tel://+7 (963) 918-40-52">+7 (963) 918-40-52</a>
+        </div>
+        <div class="Header-callback">
+            <form method="post" name="Form-callback" id="top-callback-form" class="needs-validation" novalidate>
+                <div class="form-group">
+                    <input type="text" class="phone form-control" placeholder="Ваш телефон" id="callback-phone" pattern="^\+7 \d{3} \d{3}-\d{4}$" required />
+                </div>
+                <input class="Common-btn" type="submit" value="Заказать звонок" />
+            </form>
+        </div>
+    </div>
+    <div class="Header-shadow">
+    </div>
+    <div class="Header-content">
+        <div class="Header-offer">
+            <h2>Купить ОСАГО в Тольятти<br />Со скидкой до 50%</h2>
+            <ul>
+                <li>Без комиссий за оформление</li>
+                <li>Без ожиданий и очередей</li>
+                <li>Без доп. страхования</li>
+            </ul>
+
+            <a href="#orderForm" class="Header-FormLink Common-btn goTo">Рассчитать цену</a>
+
+        </div>
+    </div>
+    <div class="Header-insLogos">
+        <div><img src="../img/ins-VSK.png" border="0" /></div>
+        <div><img src="../img/ins-Ingosstrakh.png" border="0" /></div>
+        <div><img src="../img/ins-RESO.png" border="0" /></div>
+        <div><img src="../img/ins-Rossgosstrakh.png" border="0" /></div>
+        <div><img src="../img/ins-Renessans.png" border="0" /></div>
+        <div><img src="../img/ins-Ergo.png" border="0" /></div>
+    </div>
+</header>
+
+<section class="Form" id="orderForm">
+    <div class="Form-content">
+        <div class="Common-Number">
+            01
+        </div>
+        <div class="row">
+            <div class="Form-title">
+                Полис ОСАГО онлайн-заявка по тарифам 2018 года
+            </div>
+            <div class="Form-subtitle">
+                Заполните форму и узнайте стоимость вашего полиса со скидкой
+            </div>
+        </div>
+        <div class="Form-form">
+            <form method="POST" name="Form-order" id="order-form" class="needs-validation" novalidate>
+                <div class="form-group row no-gutters">
+                    <div class="input-group">
+                        <input type="text" name=""  value="" class="form-control input-lg"  />
+                        <span class="floating-label">Ваше имя</span>
+                    </div>
+                </div>
+                <div class="form-group row no-gutters">
+                    <div class="input-group">
+                        <select class="form-control" required name="city">
+                            <option value=''>Регистрация собственника</option>
+                            <option value="Самара">Самара</option>
+                            <option value="Тольятти">Тольятти</option>
+                            <option value="Сызрань">Сызрань</option>
+                            <option value="Жигулевск">Жигулевск</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Пожалуйста, выберите город
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row no-gutters">
+                    <div class="input-group">
+                        <input type="tel" name="Phone" class="form-control input-lg" id="phonenumber" pattern="^\+7 \d{3} \d{3}-\d{4}$" required />
+                        <span class="floating-label">Номер телефона</span>
+                        <div class="invalid-feedback">
+                            Пожалуйста, введите номер телефона
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row no-gutters">
+                    <div class="input-group">
+                        <input type="text" name="Date" id="datepicker" class="form-control input-lg" value="" data-inputmask-alias="datetime" data-inputmask-inputformat="dd.mm.yyyy" data-inputmask-placeholder="дд.мм.гггг">
+                        <span class="floating-label">Ваша дата рождения</span>
+                    </div>
+                </div>
+                <div class="form-group row no-gutters">
+                    <div class="input-group">
+                        <input type="text" name="Input"  class="form-control input-lg" value="" placeholder="" >
+                        <span class="floating-label">Серия и номер водительских прав</span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="input-group col-md-6 my-mb-sm-3">
+                        <select name="">
+                            <option value="">Ваш стаж вождения</option>
+                            <option value="Менее 3-х лет">Менее 3-х лет</option>
+                            <option value="Более 3-х лет">Более 3-х лет</option>
+                        </select>
+                    </div>
+                    <div class="input-group col-md-6">
+                        <select name="">
+                            <option value="">Мощность двигателя (л.с.)</option>
+                            <option value="до 50 л.с включительно">до 50 л.с включительно</option>
+                            <option value="от 50 до 70 включительно">от 50 до 70 включительно</option>
+                            <option value="от 70 до 100 включительно">от 70 до 100 включительно</option>
+                            <option value="от 100 до 120 включительно">от 100 до 120 включительно</option>
+                            <option value="от 120 до 150 включительно">от 120 до 150 включительно</option>
+                            <option value="Свыше 150 л.с.">Свыше 150 л.с.</option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="input-group col-md-6 my-mb-sm-3">
+                        <select name="">
+                            <option value="">Категория транспорта</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="Тракторы">Тракторы</option>
+                        </select>
+                    </div>
+                    <div class="input-group col-md-6">
+                        <select name="">
+                            <option value="">Количество водителей</option>
+                            <option value="С ограничением">С ограничением</option>
+                            <option value="Без ограничения">Без ограничения</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="Form-invalidAlert alert alert-danger">
+                    Пожалуйста, заполните все обязательные поля
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="Form-submit btn btn-lg btn-block Common-btn">Отправить</button>
+                </div>
+                <div class="Form-checkboxBlock custom-control custom-checkbox">
+                    <div class="form-check">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1" checked required>
+                        <label class="custom-control-label" for="customCheck1">Вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности</label>
+                        <div class="invalid-feedback">
+                            Вы должны дать согласие
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="Delivery">
+    <div class="Delivery-content">
+        <div class="Common-Number">
+            02
+        </div>
+        <div class="row">
+            <div class="Delivery-title">
+                Доставка полисов по городу бесплатно!
+            </div>
+            <div class="Delivery-subtitle">
+                Отправьте данные и документы с телефона,
+                не посещая офис. Это удобно и очень просто!
+            </div>
+        </div>
+        <div class="Delivery-icons">
+
+            <div class="Delivery-iconItem">
+                <div class="Delivery-bgrNum">
+                    <img class="svg" src="../img/bgr-num01.svg" border="0" />
+                </div>
+                <div class="Delivery-iconImage">
+                    <img class="svg" src="../img/Delivery-order.svg" border="0" />
+                </div>
+                <h4>Заявка</h4>
+                <div class="Delivery-iconText">
+                    Отправьте сообщение "Осаго"
+                    на номер <a href="tel://+7 (963) 918-40-52">+7 (963) 918-40-52</a>
+                </div>
+                <div class="Delivery-iconLinks">
+                    <div>WhatsApp</div>,
+                    <div>Viber</div>
+                    или
+                    <div>Telegram</div>
+                </div>
+            </div>
+
+            <div class="Delivery-iconItem">
+                <div class="Delivery-bgrNum">
+                    <img class="svg" src="../img/bgr-num02.svg" border="0" />
+                </div>
+                <div class="Delivery-iconImage">
+                    <img class="svg" src="../img/Delivery-spec.svg" border="0" />
+                </div>
+                <h4>Специалист</h4>
+                <div class="Delivery-iconText">
+                    Рассчитает стоимость, примет
+                    документы по телефону
+                    и оформит полис
+                </div>
+            </div>
+
+            <div class="Delivery-iconItem">
+                <div class="Delivery-bgrNum">
+                    <img class="svg" src="../img/bgr-num03.svg" border="0" />
+                </div>
+                <div class="Delivery-iconImage">
+                    <img class="svg" src="../img/Delivery-delivery.svg" border="0" />
+                </div>
+                <h4>Доставка</h4>
+                <div class="Delivery-iconText">
+                    Страховки-24 доставит полис
+                    домой или в офис. Оплачивайте
+                    курьеру наличными или картой
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<section class="Policy">
+    <div class="Policy-content">
+        <div class="Common-Number">
+            03
+        </div>
+        <div class="row">
+            <div class="Policy-title">
+                Оформление полиса за 7 минут
+            </div>
+            <div class="Policy-subtitle">
+                Страховки-24 — простой, удобный и выгодный способ
+                застраховать автомобиль
+            </div>
+        </div>
+        <div class="Policy-items">
+
+            <div class="Policy-item">
+                <div class="Policy-itemNumber">01</div>
+                <div class="Policy-itemTitle">
+                    Открыто с 9 до 19 часов
+                </div>
+                <div class="Policy-itemSubtitle">
+                    Без перерывов на праздники
+                    и выходные
+                </div>
+            </div>
+
+            <div class="Policy-item">
+                <div class="Policy-itemNumber">02</div>
+                <div class="Policy-itemTitle">
+                    Оплата любым способом
+                </div>
+                <div class="Policy-itemSubtitle">
+                    Наличными или Visa/MasterCard
+                </div>
+            </div>
+
+            <div class="Policy-item">
+                <div class="Policy-itemNumber">03</div>
+                <div class="Policy-itemTitle">
+                    24 страховые компании
+                </div>
+                <div class="Policy-itemSubtitle">
+                    на выбор, в одном офисе
+                </div>
+            </div>
+
+            <div class="Policy-spacer"></div>
+
+            <div class="Policy-item">
+                <div class="Policy-itemNumber">04</div>
+                <div class="Policy-itemTitle">
+                    Удобное
+                    месторасположение
+                </div>
+                <div class="Policy-itemSubtitle">
+                    Просторные офисы и
+                    обслуживание без очередей
+                </div>
+            </div>
+
+            <div class="Policy-item">
+                <div class="Policy-itemNumber">05</div>
+                <div class="Policy-itemTitle">
+                    Парковка
+                </div>
+                <div class="Policy-itemSubtitle">
+                    Большая парковка для клиентов
+                </div>
+            </div>
+
+            <div class="Policy-item">
+                <div class="Policy-itemNumber">06</div>
+                <div class="Policy-itemTitle">
+                    Бесплатная доставка
+                </div>
+                <div class="Policy-itemSubtitle">
+                    Оформляйте полис на посещая офис
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<section class="Discount">
+
+    <div class="Discount-content">
+        <div class="Common-Number">
+            04
+        </div>
+        <div class="row">
+            <div class="Discount-title">
+                Скидка КБМ по базе РСА.
+                Как получить и проверить?
+            </div>
+            <div class="Discount-subtitle">
+                Скидка на полис ОСАГО — "Бонус-малус" (КБМ)
+                рассчитывается индивидуально, в зависимости от
+                количества совершенных ДТП и может достигать 50%
+            </div>
+        </div>
+        <div class="Discount-items">
+
+            <div class="Discount-item">
+                <div class="Discount-itemNumber green">
+                    -40%
+                </div>
+                <div class="Discout-itemInfo">
+                    <div class="Discount-itemImage">
+                        <img src="../img/Discount-LADA.png" border="0" />
+                    </div>
+                    <div class="Discount-itemText">
+                        <h5>LADA Priora</h5>
+                        2017. ОСАГО Согласие — 7 700 руб<br />
+                        2018. Цена со скидкой Страховки-24 — 4 620 руб
+                    </div>
+                </div>
+            </div>
+
+            <div class="Discount-item">
+                <div class="Discount-itemNumber yellow">
+                    -45%
+                </div>
+                <div class="Discout-itemInfo">
+                    <div class="Discount-itemImage">
+                        <img src="../img/Discount-BMWX3.png" border="0" />
+                    </div>
+                    <div class="Discount-itemText">
+                        <h5>BMW X3</h5>
+                        2017. ОСАГО Ресо Гарантия — 10 640 руб<br />
+                        2018. Цена со скидкой в Страховки-24 — 6 160 руб
+                    </div>
+                </div>
+            </div>
+
+            <div class="Discount-item">
+                <div class="Discount-itemNumber pink">
+                    -50%
+                </div>
+                <div class="Discout-itemInfo">
+                    <div class="Discount-itemImage">
+                        <img src="../img/Discount-KiaRio.png" border="0" />
+                    </div>
+                    <div class="Discount-itemText">
+                        <h5>KIA Rio</h5>
+                        2017. ОСАГО Росгосстрах — 8 400 руб<br />
+                        2018. Цена со скидкой в Страховки-24 — 4 200 руб
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-12">&nbsp;</div>
+            <div class="col-lg-9 col-md-12">
+                <a href="#orderForm" class="Header-FormLink Common-btn goTo">Рассчитать цену</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="Insurance">
+    <div class="Insurance-content">
+        <div class="Common-Number">
+            05
+        </div>
+        <div class="row">
+            <div class="Insurance-title">
+                Страховки-24 экономит
+                ваше время и деньги
+            </div>
+        </div>
+
+        <div class="Insurance-offer row">
+            <ul>
+                <li>Ищем возможность максимально сократить стоимость полиса</li>
+                <li>Не берем никаких комиссий или оплаты за услуги оформления</li>
+                <li>Вовремя напомним об истечении срока действия текущего полиса</li>
+            </ul>
+        </div>
+
+        <div class="Insurance-form">
+            <form id="consult-form" class="row needs-validation" novalidate>
+                <div class="form-group name">
+                    <input type="text" class="Insurance-name" placeholder="Ваше имя" />
+                </div>
+                <div class="form-group phone">
+                    <input type="tel" class="Insurance-phone form-control" placeholder="Ваш телефон" pattern="^\+7 \d{3} \d{3}-\d{4}$" required />
+                </div>
+                <div class="form-group submit">
+                    <input class="Common-btn" type="submit" value="Получить консультацию" />
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="Centre">
+    <div class="Centre-content">
+        <div class="Common-Number">
+            06
+        </div>
+        <div class="row">
+            <div class="Centre-title">
+                Оформляйте покупку-
+                продажу автомобиля  в любом
+                центре страхования Страховки-24
+
+            </div>
+        </div>
+
+        <div class="Centre-icons">
+
+            <div class="Centre-iconItem">
+                <div class="Centre-iconImage">
+                    <img class="svg" src="../img/Centre-img1.svg" border="0" />
+                </div>
+                <div class="Centre-iconText">
+                    Оформление договоров купли-продажи автотранспорта
+                </div>
+            </div>
+
+            <div class="Centre-iconItem">
+                <div class="Centre-iconImage">
+                    <img class="svg" src="../img/Centre-img2.svg" border="0" />
+                </div>
+                <div class="Centre-iconText">
+                    Проверка автотранспорта
+                    на залог, угон и другие
+                    риски
+                </div>
+            </div>
+
+            <div class="Centre-iconItem">
+                <div class="Centre-iconImage">
+                    <img class="svg" src="../img/Centre-img3.svg" border="0" />
+                </div>
+                <div class="Centre-iconText">
+                    Пересчет банкнот и
+                    проверка на подлинность
+                </div>
+            </div>
+
+        </div>
+        
+
+
+    </div>
+
+</section>
+
+<section class="Contacts">
+    <div id="Contacts-map"></div>
+    <div class="Contacts-cover"></div>
+    <div class="Contacts-content">
+        <div class="Common-Number">
+            07
+        </div>
+        <div class="row">
+            <div class="Contacts-title">
+                Страховки-24 всегда
+                в удобном месте
+            </div>
+        </div>
+
+        <div class="Contacts-addresses">
+            <div class="Contacts-address mod-white">
+                <div class="Contacts-address-img mr-xs-3">
+                </div>
+                <div class="media-body">
+                    АЛЬМАКС-АВТО, Тольятти,<br />
+                    Обводное шоссе, 10б
+                    <a href="tel://+7 (963) 918-40-52">+7 (963) 918-40-52</a>
+                    <a href="//yandex.ru/maps/-/CBBkYXqIcC" target="_blank">Посмотреть на карте</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <div class="Footer-logo">
+        <h3>Cтраховки-<span class="green">24</span></h3>
+        Центр страхования
+    </div>
+    <div class="Footer-subscribe">
+        <form id="subscribe-form" name="Form-subscribe" class="Form-subscribe needs-validation" novalidate>
+            <div class="form-group Form-SubscribeWrap">
+                <input type="email" class="form-control Footer-subscribeInput"  name="" placeholder="Подпишитесь на новости" required />
+                <div class="invalid-feedback">
+                    Неверный формат e-mail
+                </div>
+                <input type="submit" value="" />
+            </div>
+        </form>
+    </div>
+    <div class="Footer-phone">
+        <div class="wrap">
+            Наш телефон
+            <a href="tel://+7 (963) 918-40-52">+7 (963) 918-40-52</a>
+        </div>
+    </div>
+
+    <div class="Footer-docs">
+        &copy; 2018, ООО «Еврокар» ИНН 6321446920 ОГРН 1186313042574. 445051, РФ, Самарская область, г. Тольятти, Степана Разина, д. 75, кв. 17
+        «Страховки-24»
+        <a href="javascript:void(0);" class="agreement">Политика конфиденциальности</a>
+    </div>
+
+    <div class="Footer-socials">
+        <div class="wrap">
+            <div href="" class="vk">Vkontakte</div>
+            <div href="" class="fb">Facebook</div>
+            <div href="" class="ig">Instagram</div>
+        </div>
+    </div>
+
+    <div class="Footer-email">
+        <div class="wrap">
+            E-mail<br />
+            <a href="mailto:strakhovki24@gmail.com">strakhovki24@gmail.com</a>
+        </div>
+    </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="Спасибо!" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="jumbotron">
+                    <div class="Modal-img">
+                        <img src="../img/Modal-img.png" border="0" class="img-fluid" />
+                    </div>
+                    <div class="Modal-thanks">
+                        Спасибо
+                    </div>
+                    <div class="Modal-text">
+                        Ваша заявка принята!<br />
+                        Скоро мы с вами свяжемся
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bd-example-modal-lg" id="agreementModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Политика конфиденциальности персональных данных</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>1.1. Настоящая Политика конфиденциальности персональных данных действует в отношении всей информации, которую Интернет-сайт «Страховки 24», расположенный на доменном имени www.страховки-24.рф, может получить о Пользователе во время использования программ и продуктов сайта.</li>
+                    <li>2.1. Использование Пользователем сайта «Страховки 24» означает согласие с настоящей Политикой конфиденциальности и условиями обработки персональных данных Пользователя.</li>
+                    <li>2.2. В случае несогласия с условиями Политики конфиденциальности Пользователь должен прекратить использование сайта «Страховки 24».</li>
+                    <li>2.3. Настоящая Политика конфиденциальности применяется только к сайту «Страховки 24». Сайт не контролирует и не несет ответственность за сайты третьих лиц.</li>
+                    <li>2.4. Администрация сайта не проверяет достоверность персональных данных, предоставляемых Пользователем сайта.</li>
+                    <li>3.1. Настоящая Политика конфиденциальности устанавливает обязательства Администрации сайта по неразглашению и обеспечению режима защиты конфиденциальности персональных данных, которые Пользователь предоставляет при оформлении заказа для проверки скидки КБМ в базе РСА и расчета стоимости полиса ОСАГО.</li>
+                    <li>
+                        3.2. Персональные данные, разрешённые к обработке в рамках настоящей Политики конфиденциальности, предоставляются Пользователем путём заполнения формы сбора персональных данных на Сайте «Страховки 24» в разделе «ОСАГО ОНЛАЙН ЗАЯВКА» и включают в себя следующую информацию:
+                        <ul>
+                            <li>3.2.1. регистрация Пользователя;</li>
+                            <li>3.2.2. контактный телефон Пользователя;</li>
+                            <li>3.2.3. фамилию, имя, отчество Пользователя;</li>
+                            <li>3.2.4. дата рождения ;</li>
+                            <li>3.2.5. серия номер водительских прав;</li>
+                            <li>3.2.6. стаж вождения;</li>
+                            <li>3.2.7. категория транспортного средства;</li>
+                        </ul>
+                    </li>
+                    <li>4.1. Администрация сайта вправе вносить изменения в настоящую Политику конфиденциальности без согласия Пользователя.</li>
+                    <li>4.2. Новая Политика конфиденциальности вступает в силу с момента ее размещения на Сайте, если иное не предусмотрено новой редакцией Политики конфиденциальности.</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/bundle.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=4f6ab4b1-277f-4346-aefa-211282ebdc03&lang=ru_RU" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+    ymaps.ready(init);
+    function init() {
+        const g = document.getElementsByTagName('body')[0];
+        const wdth = window.innerWidth || document.documentElement.clientWidth || g.clientWidth;
+
+        let coords = [];
+
+        if (wdth <= 768) {
+            coords = [53.562330, 49.352510];
+        }
+        else {
+            // coords = [53.559108, 49.344713];
+            coords = [53.559547, 49.345123]
+        }
+        // console.log(wdth, coords);
+
+        const myMap = new ymaps.Map('Contacts-map', {
+            zoom: 16,
+            center: coords,
+            controls: ['geolocationControl']
+            // controls: ['geolocationControl', 'zoomControl']
+        }, {
+            // Зададим опции для элементов управления.
+            // zoomControlSize: 'large'
+        });
+        // const zoomControlSizeObj = myMap.controls.get('zoomControl');
+        // zoomControlSizeObj.options.set('float', 'none');
+        // zoomControlSizeObj.options.set('position', {
+        //     top: 270,
+        //     right: 10,
+        //     left: 'auto',
+        //     bottom: 'auto'
+        // });
+        const geolocationControlObj = myMap.controls.get('geolocationControl');
+        geolocationControlObj.options.set('position', {
+            top: 220,
+            right: 10,
+            left: 'auto',
+            bottom: 'auto'
+        });
+        var myPlacemark1 = new ymaps.Placemark([53.558840, 49.352687], {
+            balloonContent: 'АЛЬМАКС-КИА'
+        }, {
+            iconLayout: 'default#image',
+            iconImageClipRect: [[0,48], [47, 96]],
+            iconImageHref: '/img/Contacts-address-img.png',
+            iconImageSize: [48, 48],
+            iconImageOffset: [0, 0]
+        });
+        myMap.geoObjects.add(myPlacemark1);
+    }
+</script>
+
+
+
+</body>
+</html>

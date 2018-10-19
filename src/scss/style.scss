@@ -1,0 +1,20 @@
+@import "variables";
+
+@import "~bootstrap/scss/bootstrap";
+@import "fonts";
+
+@import "common";
+
+@import "Header";
+@import "Form";
+@import "Delivery";
+@import "Policy";
+@import "Discount";
+@import "Insurance";
+@import "Centre";
+@import "Contacts";
+
+@import "Footer";
+@import "Modal";
+
+@import '../js/gijgo/css/gijgo.css';

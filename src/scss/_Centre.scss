@@ -1,0 +1,131 @@
+.Centre {
+  position: relative;
+  min-height: 864px;
+  text-align: left;
+  overflow: auto;
+  background: url('../img/Centre-bgr.png') center top no-repeat, linear-gradient(to bottom, #f8f8f8, transparent);
+  font-family: Muller;
+  color: $color-white;
+  z-index: 9;
+  .Common-Number {
+    top: 170px;
+    left: 15px;
+    @include media-breakpoint-down(sm) {
+      top: 15px;
+      left: 25px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    background: $color-blue;
+  }
+}
+.Centre-content {
+  @extend .container;
+  position: relative;
+  padding: 200px 15px 30px 15px;
+  @include media-breakpoint-down(md) {
+    padding-top: 50px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 60px 25px 50px 25px;
+  }
+}
+.Centre-title {
+  @extend .col-lg-7;
+  @extend .col-md-9;
+  @extend .col-xs-12;
+  position: relative;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+.Centre-icons {
+  @extend .row;
+  @extend .justify-content-md-around;
+  margin-top: 55px;
+}
+.Centre-iconItem {
+  @extend .col-md-3;
+  @extend .col-sm-12;
+  font-size: 1.1rem;
+  font-weight: 300;
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  h4 {
+    margin: 15px 0 20px 0;
+    font-weight: 400;
+  }
+  &:last-child {
+    .Centre-iconImage {
+      img, svg {
+        width: 56%;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 0;
+    }
+  }
+}
+.Centre-iconImage {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 195px;
+  height: 195px;
+  border: solid 1px $color-white;
+  border-radius: 50%;
+  transition: background-color $transition-time;
+  img, svg {
+    margin-top: 25%;
+    width: 46%;
+    height: auto;
+    fill: $color-green-text;
+  }
+  &:hover, &:active {
+    background-color: $color-white;
+    svg {
+      fill: $color-green-text;
+      .cls-1 {
+        fill: $color-green-text !important;
+      }
+    }
+  }
+  @include media-breakpoint-up(xxs) {
+    padding: 0 15px 40px 15px;
+    &:after {
+      top: auto;
+      bottom: 20px;
+      left: 15px;
+      right: auto;
+      width: 30%;
+      border: none;
+      border-top: solid 2px $color-green-btn;
+    }
+  }
+  @include media-breakpoint-between(md, lg) {
+    width: 170px;
+    height: 170px;
+    img {
+      max-width: 70%;
+      height: auto;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    display: inline-block;
+    img {
+      margin-top: 50px;
+    }
+  }
+}
+.Centre-iconText {
+  margin-top: 30px;
+  @include media-breakpoint-down(sm) {
+    margin-top: 15px;
+  }
+}

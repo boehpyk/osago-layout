@@ -1,0 +1,175 @@
+.Discount {
+  min-height: 1263px;
+  text-align: left;
+  overflow: auto;
+  background: #f8f8f8 url('../img/Discount-bgr.jpg') center top no-repeat;
+  font-family: Muller;
+  color: $color-white;
+  .Common-Number {
+    top: 217px;
+    left: 15px;
+    @include media-breakpoint-down(md) {
+      top: 15px;
+      left: 15px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    background: #2f69bd;
+  }
+  .Header-FormLink {
+    margin: 0 0 0 65px;
+    @include media-breakpoint-down(lg) {
+      margin: 0 0 0 25px;
+    }
+    @include media-breakpoint-down(md) {
+      margin: 45px auto 0 auto;
+    }
+    @include media-breakpoint-down(sm) {
+      margin: 15px auto 0 auto;
+    }
+  }
+}
+.Discount-content {
+  @extend .container;
+  position: relative;
+  padding: 250px 15px 30px 15px;
+  @include media-breakpoint-down(md) {
+    padding-top: 50px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 60px 25px 50px 25px;
+  }
+}
+.Discount-title {
+  @extend .col-lg-6;
+  @extend .col-sm-12;
+  position: relative;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  padding: 0 78px 0 15px;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    bottom: auto;
+    left: auto;
+    right: 0px;
+    height: 80%;
+    border: none;
+    border-right: solid 2px $color-green-btn;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 0 15px 40px 15px;
+    &:after {
+      top: auto;
+      bottom: 20px;
+      left: 15px;
+      right: auto;
+      width: 30%;
+      border: none;
+      bottom: solid 2px $color-green-btn;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 2rem;
+    text-align: center;
+    &:after {
+      display: none;
+    }
+  }
+}
+.Discount-subtitle {
+  @extend .col-lg-6;
+  @extend .col-sm-12;
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.2;
+  padding: 5px 0 0 75px;
+  @include media-breakpoint-down(md) {
+    padding: 0 0 0 15px;
+  }
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+  }
+  @include media-breakpoint-down(xs) {
+    padding: 0 0 0 0;
+  }
+}
+.Discount-items {
+  margin-top: 100px;
+  @include media-breakpoint-down(md) {
+    margin: 30px 60px 30px 60px;
+  }
+  @include media-breakpoint-down(sm) {
+    margin: 30px 0 30px 0;
+  }
+}
+.Discount-item {
+  @extend .row;
+  margin-bottom: 60px;
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &:last-child {
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 0;
+    }
+  }
+}
+.Discount-itemNumber {
+  @extend .col-lg-3;
+  @extend .col-md-5;
+  font-weight: 200;
+  @include media-breakpoint-up(xxs) {
+    font-size: 6.6rem;
+    padding-top: 10px;
+  }
+  @include media-breakpoint-up(md) {
+    padding-top: 80px;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 5.2rem;
+    padding-top: 10px;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 6.6rem;
+    padding-top: 10px;
+  }
+}
+.Discout-itemInfo {
+  @extend .col-lg-9;
+  @extend .col-md-7;
+  @extend .row;
+  @include media-breakpoint-up(xxs) {
+    padding: 0;
+    margin: 0 auto;
+  }
+  @include media-breakpoint-up(sm) {
+    padding: 0;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-left: 50px;
+  }
+}
+.Discount-itemImage {
+  @extend .col-lg-5;
+  @extend .col-md-12;
+  text-align: center;
+  @include media-breakpoint-down(md) {
+    text-align: left;
+  }
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+  }
+  img {
+    @extend .img-fluid;
+  }
+
+}
+.Discount-itemText {
+  @extend .col-lg-7;
+  @extend .col-md-12;
+  padding-top: 30px;
+}

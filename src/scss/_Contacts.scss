@@ -1,0 +1,113 @@
+.Contacts {
+  position: relative;
+  margin-top: -254px;
+  padding-top: 254px;
+  min-height: 973px;
+  text-align: left;
+  overflow: auto;
+  font-family: Muller;
+  color: #000;
+  z-index: 8;
+  .Common-Number {
+    top: 24px;
+    left: 15px;
+    @include media-breakpoint-down(sm) {
+      top: 15px;
+      left: 25px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    background: $color-body;
+  }
+}
+#Contacts-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 973px;
+}
+.Contacts-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  min-height: 973px;
+  background-color: $color-white; // fallback
+  background: url('../img/Contacts-cover-bgr.jpg') left 254px no-repeat, -webkit-linear-gradient(to right, $color-white-rgb 0%, $color-white-rgb 60%, $color-transparent-rgb 100%); // Safari 5.1+, Chrome 10+
+  background: url('../img/Contacts-cover-bgr.jpg') left 254px no-repeat, linear-gradient(to right, $color-white-rgb 0%, $color-white-rgb 60%, $color-transparent-rgb 100%); // Standard, IE10
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+.Contacts-content {
+  @extend .container;
+  position: relative;
+  padding-top: 60px;
+  @include media-breakpoint-down(md) {
+    padding-top: 50px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 60px 25px 30px 25px;
+  }
+
+}
+.Contacts-title {
+  @extend .col-lg-5;
+  @extend .col-xs-12;
+  position: relative;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  @include media-breakpoint-down(sm) {
+    font-size: 2rem;
+  }
+}
+.Contacts-addresses {
+  margin-top: 40px;
+}
+.Contacts-address {
+  @extend .col-lg-4;
+  @extend .col-md-6;
+  @extend .col-sm-12;
+  @extend .media;
+  padding: 24px 8px 24px 24px;
+  border: solid 1px transparent;
+  border-radius: 7px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  background-color: $color-white;
+  color: #000;
+  box-shadow: 0 0 78px 0 #ccc;
+  transition: $transition-time all;
+  @include media-breakpoint-down(sm) {
+    margin: 0 50px 0 0px;
+  }
+  a {
+    color: #2877fe;
+    text-decoration: underline;
+    &.black {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+  &:hover {
+    background-color: #2467d5;
+    color: $color-white;
+    a {
+      color: $color-white;
+    }
+    .Contacts-address-img {
+      background-position: left -48px;
+    }
+  }
+  a {
+    display: block;
+    margin-top: 15px;
+  }
+}
+.Contacts-address-img {
+  width: 48px;
+  height: 48px;
+  background: url(../img/Contacts-address-img.png) left top no-repeat;
+}
