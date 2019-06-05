@@ -14,4 +14,4 @@
 
 **Result:**
 
-Production build directory: /dist/
+Production build directory: `/dist/`
